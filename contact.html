@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Greenden</title>
-    <!-- Tailwind css link -->
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+   <!-- Tailwind CSS CDN  Link-->
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 <body>
@@ -14,9 +16,10 @@
     <nav class="bg-green-100 p-3 flex items-center justify-between shadow-2xl sticky top-0 z-10">
         <h1 class="text-2xl">Greenden</h1>
 
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 md:hidden">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
-          </svg>
+        <svg id="menubar" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+        stroke="currentColor" class="w-6 md:hidden">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+    </svg>
                          
         <ul class="flex gap-5 text-gray-600 hidden md:flex">
             <li>
@@ -30,6 +33,26 @@
             </li>
         </ul>
     </nav>
+
+    
+    <!-- Side bar -->
+
+<section id="sidenav" class="  fixed z-20 top-0 transition-all duration-1000 md:hidden " style="width: 50%;height: 100vh; right:-50%; background-color: #E2E6DB;">
+    <div class="text-right p-5">
+        <svg id="menubar" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+        stroke="currentColor" class="w-6 md:hidden">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+    </svg>
+          
+    </div>
+
+        <ul class=" gap-10 flex flex-col items-center  md:flex text-green-900 font-semibold text-1xl ">
+            <li class="hover:underline"><a href="./index.html">Home</a></li>
+            <li class="hover:underline"><a href="./product.html">Products</a></li>
+            <li class="hover:underline"><a href="./contact.html">Contact</a></li>
+        </ul>
+    </div>
+</section>
 
     <!-- contact form -->
 
@@ -64,5 +87,7 @@
         <p>The Standard chunk of Lorem ipsum used since 1500s is reproduced for those interest</p>
         <p>&copy;2025 Greeden.com</p>
     </section>
+
+    <script src="contact.js"></script>
 </body>
 </html>
